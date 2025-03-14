@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+	<head>
+		<meta charset='UTF-8'/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Webdev Revision 6-11</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                background-color: antiquewhite;
+            }
+            main {
+                max-width: 692px;
+                min-width: 300px;
+                margin: 0 auto;
+            }
+            article {
+                background-color: aquamarine;
+                border: 2px solid darkslategray;
+                display: inline-block;
+
+                margin: 20px;
+                width: 300px;
+                vertical-align: top;
+            }
+            div {
+                padding: 15px;
+            }
+            figure {
+                padding: 2px;
+                background-color:palevioletred; /*Padding is uneven for some reason UPDATE: Fixed, see below*/
+                
+            }
+            img {
+                width: 100%;
+                display: block; /*This fixes the uneven padding-bottom*/
+            }
+            header {
+                margin: 0 0 20px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            p {
+                padding-bottom: 10px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            a {
+                color:black;
+                text-decoration: none;
+            }
+            a:hover {
+                background: lightpink;
+                border: 2px solid palevioletred;
+            }
+            .button { 
+                background-color: plum;
+                border: 2px solid purple;
+                border-radius: 20px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+                display:inline-block;
+                padding: 5px 10px;
+            }
+
+        </style>
+	</head>
+   
+
+	<body>
+        <main>
+            <article style="background-color: bisque;">
+                <figure><img src="images/pfp_Arcane.png"></figure>
+                <div>
+                <header><h2>The Arcane</h2></header>
+                <p>"Arcane" technically means "mysterious" or "little understood".</p>
+                <p>The Arcane is basically anything magic. It can be used for good, but also for destruction. Some are born with magical talents, but they are rare.</p>
+                <p>In Piltover and Zaun, most people are not gifted with the Arcane. Instead they use Hextech: a mix of technology and Arcane, or chemtech (shimmer, etc).
+                <p>Some regions hunt and kill those gifted by the arcane whilst others, like the nation of Noxus celebrate magical talents (as long as the magic is honed and is useful).</p>
+                <p>In Targon, the Arcane is used for religious purposes. There they also use the Arcane for magical rituals and traditions, but never for destruction.</p> 
+                <p>An example of what can happen when the arcane is used for destruction, is what happened to the city of Icathia. A mage used the arcane to open a void rift which ultimately consumed the whole city.</p>
+                
+                <p>TL;DR all in all, arcane is just magic.</p>
+                <a class="button" href="#">Read More</a>
+                </div>
+            </article>
+        
+            <article>
+                <figure><img src="images/pfp_Arcane.png"></figure>
+                <div>
+                <header><h2>The Arcane</h2></header>
+                <p>"Arcane" technically means "mysterious" or "little understood".</p>
+                
+                
+                <p>TL;DR all in all, arcane is just magic.</p>
+                <a class="button" href="#">Read More</a>
+                </div>
+            </article>
+        </main>
+	</body>
+
+    <footer>
+
+    </footer>
+</html>
